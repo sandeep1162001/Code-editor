@@ -1,68 +1,135 @@
-Live Code
+# 🚀 Live Code Editor  
 
-Welcome to the Live Code Editor project! This is a lightweight, user-friendly code editor designed to provide a seamless coding experience. It supports live code sharing with multiple users, syntax highlighting, multiple language support, file/folder structure support and edit code.
+Welcome to the **Live Code Editor** project!  
+This is a lightweight, user-friendly code editor designed to provide a seamless coding experience. It supports:  
 
-Folder Structure
-Code editor/
-├── backend/              # Node.js/Express backend
+- Live code sharing with multiple users  
+- Syntax highlighting  
+- Multiple language support  
+- File/folder structure management  
+- Real-time editing  
+
+---
+
+## 📂 Project Structure  
+
+```
+
+Code-editor/
+├── backend/            # Node.js/Express backend
 ├── frontend/
-│   └── code-editor/     # React frontend
+│   └── code-editor/    # React frontend
 └── README.md
 
-Table of Contents
+````
 
-Installation
-Usage
-Features
-Contributing
-License
+---
 
-🚀 Getting Started
-✅ Prerequisites
-Node.js 
-npm (comes with Node.js)
+## 📑 Table of Contents  
 
-🧪 Backend Setup
+- [Getting Started](#-getting-started)  
+- [Backend Setup](#-backend-setup)  
+- [Frontend Setup](#-frontend-setup)  
+- [Usage](#-usage)  
+- [Features](#-features)  
+- [Tech Stack](#-tech-stack)  
+- [Contributing](#-contributing)  
+- [License](#-license)  
+
+---
+
+## ✅ Getting Started  
+
+### Prerequisites  
+- [Node.js](https://nodejs.org/)  
+- npm (comes with Node.js)  
+
+---
+
+## 🧪 Backend Setup  
+
+```bash
 cd backend
 npm install
 npm run dev
+````
 
-🔐 Create a .env file inside the backend/ directory. Example:
+🔐 Create a **.env** file inside the `backend/` directory:
 
+```env
 FRONTEND_URL=http://localhost:5173
+```
 
-🎨 Frontend Setup
+---
+
+## 🎨 Frontend Setup
+
+```bash
 cd frontend/code-editor
 npm install
 npm run dev
+```
 
-🔐 Create a .env file inside the backend/ directory. Example:
+🔐 Create a **.env** file inside the `frontend/code-editor/` directory:
 
+```env
 REACT_APP_BACKEND_URL=http://localhost:5000
+```
 
-Usage
+---
 
-Launch the Live Code Editor by running the command above.
-Open the editor in your preferred browser.
-Start coding! Use the interface to create coding room , write and edit your code.
+## ▶️ Usage
 
-Example:
-// Sample code snippet to test the editor
+1. Run the backend and frontend using the above commands.
+2. Open the editor in your browser.
+3. Create a coding room, write, and edit your code in real-time with others.
+
+**Example Test Snippet:**
+
+```javascript
 function helloWorld() {
   console.log("Hello, Code Editor!");
 }
+helloWorld();
+```
 
-Features
+---
 
-Live code sharing: It supports live code sharing for multiple users.
-Syntax Highlighting: Supports popular programming languages like JavaScript, Python, Java, etc.
-File/Folder: It supports creating different files and folders for different code snippets.
-User-Friendly Interface: Intuitive design for beginners and professionals alike.
-Multiple Users: It allows multiple users to code together live.
+## ✨ Features
 
-Tech Stack
-Layer	Technology
-Frontend	React.js
-Backend	Node.js, Express.js
-code editor   Monacco editor
-real-time	Socket.IO
+* **Live Code Sharing** – Multiple users can collaborate in real-time.
+* **Syntax Highlighting** – Supports popular languages like JavaScript, Python, Java, etc.
+* **File/Folder Management** – Create, edit, and manage project structures.
+* **User-Friendly Interface** – Intuitive design for both beginners and professionals.
+* **Real-Time Collaboration** – Built with WebSockets for seamless interaction.
+
+---
+
+## 🛠 Tech Stack
+
+| Layer       | Technology          |
+| ----------- | ------------------- |
+| Frontend    | React.js            |
+| Backend     | Node.js, Express.js |
+| Code Editor | Monaco Editor       |
+| Real-time   | Socket.IO           |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-name`)
+3. Commit your changes (`git commit -m "Add feature"`)
+4. Push to the branch (`git push origin feature-name`)
+5. Open a Pull Request
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+```
